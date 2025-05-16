@@ -4,72 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory and Form</title>
-    <style>
-        /* Basic styling (you can customize further) */
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-        form {
-            margin-top: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        img {
-            max-width: 100px; /* Adjust as needed */
-            height: auto;
-        }
-        ul {
-            list-style-type: none; /* Remove default bullet points */
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-          margin-bottom: 15px; /* Add space between form fields */
-        }
-
-        .required-field {
-            font-size: 0.8em;
-            color: red;
-        }
-    </style>
 </head>
 <body>
 
     <h2>INVENTORY SYSTEMS</h2>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -95,7 +34,8 @@
                 <td>200</td>
                 <td></td>
                 <td>5/14/2019</td>
-                <td><img src="boybawang.png" alt="Boy Bawang"></td> </tr>
+                <td><img src="boybawang.png" alt="Boy Bawang" width="100"></td>
+            </tr>
             <tr>
                 <td>10003</td>
                 <td>Boy Bawang Garlic (pc)</td>
@@ -126,9 +66,9 @@
                 <td>240</td>
                 <td></td>
                 <td></td>
-                 <td></td>
+                <td></td>
             </tr>
-             <tr>
+            <tr>
                 <td>10007</td>
                 <td>Boy Bawang BBQ (pc)</td>
                 <td>3000</td>
@@ -136,43 +76,36 @@
                 <td>5/17/2019</td>
                 <td></td>
             </tr>
-             <tr>
+            <tr>
                 <td>10008</td>
                 <td>Boy Bawang BBQ (pack)</td>
                 <td>210</td>
                 <td></td>
                 <td></td>
-                 <td></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
 
     <h2>Basic Web Form</h2>
     <form>
-        <ul>
-            <li>
-                <label for="name">Your Name<span class="required-field">*</span></label>
-                <input type="text" id="name" name="name" required>
-            </li>
-            <li>
-                <label for="email">Email<span class="required-field">*</span></label>
-                <input type="email" id="email" name="email" required>
-            </li>
-            <li>
-                <label for="contact">Contact No.<span class="required-field">*</span></label>
-                <input type="text" id="contact" name="contact" required>
-            </li>
-            <li>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </li>
-            <li>
-                <button type="submit">Send</button>
-            </li>
-        </ul>
+        <label for="name">Your Name<span style="color:red">*</span></label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email<span style="color:red">*</span></label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact No.<span style="color:red">*</span></label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit">Send</button>
     </form>
-<a href="index.html">
-        <button type="button">Home</button>
-    </a>
-    <p>CORMICK</p> </body>
+
+    <br>
+    <a href="index.html">Back to Home</a>
+    <p>CORMICK</p>
+</body>
 </html>
